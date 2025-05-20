@@ -104,7 +104,7 @@ header {
 }
 
 .header__profile-button {
-  background-image: url("../../img/Profile-pic.png");
+  background-image: url("../../img/Profile-pic.svg");
 }
 
 .header__button {
@@ -114,4 +114,14 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   border: none;
+}
+
+.header__icon {
+  width: 120px;
+  height: 56px;
+  border: none;
+  background-image: url("../../img/Logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */
