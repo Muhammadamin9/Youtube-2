@@ -1,5 +1,6 @@
 header{
     padding: 10px 0;
+    position: relative;
 }
 .header__wrapper {
     @include d-flex(0,space-between);
