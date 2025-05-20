@@ -18,6 +18,7 @@ header{
     outline: none;
     background-color: black;
     padding: 10px;
+    border-radius: 10px;
     color: gray;
 }
 .header__search-button {
@@ -70,4 +71,19 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
+}
+.history-ul {
+    position: absolute;
+    color: white;
+    width: 470px;
+    top: 50px;
+    display: none;
+}
+.header__search{
+position: relative;
+}
+.history-li {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
 }
