@@ -3,3 +3,5 @@ let profileIcon = document.querySelector('.header__notifications-button');
 logoButton.addEventListener('click',()=>{
     location.reload();
 });
+
+
