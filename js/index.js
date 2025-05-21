@@ -153,3 +153,4 @@ arr.forEach(el => {
 });
 }
 display(videoData);
+display(videoData);

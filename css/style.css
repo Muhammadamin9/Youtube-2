@@ -175,8 +175,9 @@ header {
 
 .video-avatar {
   border-radius: 50%;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-left: 20px;
+  width: 40px;
 }
 
 .video-name {
