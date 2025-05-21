@@ -11,8 +11,9 @@ body {
     padding: 10px;
     height: 100vh;
     overflow-y: auto;
+   
   }
-  
+ 
   .menu,
   .subscriptions {
     list-style: none;
@@ -50,7 +51,7 @@ body {
     color: #aaa;
     padding-left: 10px;
   }
-  .bi bi-house-door-fill{
+  .bi .bi-house-door-fill{
     
   }
    .filter__li{
