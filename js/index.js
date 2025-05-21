@@ -4,3 +4,4 @@ logoButton.addEventListener('click',()=>{
     location.reload();
 });
 
+let historyUl = document.querySelector('.history-ul');
