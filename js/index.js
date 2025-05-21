@@ -1,7 +1,14 @@
-let logoButton = document.querySelector('.header__icon');
-let profileIcon = document.querySelector('.header__notifications-button');
-logoButton.addEventListener('click',()=>{
-    location.reload();
-});
+const wrapper = document.querySelector(".wrapper");
 
-let historyUl = document.querySelector('.history-ul');
+videoData.forEach((el) => {
+  wrapper.insertAdjacentHTML(
+    "beforeend",
+    ` 
+      <h1>${el.title}</h1>
+        <img src="${el.thumbnail}" alt="" />
+  
+      <p>${el.channel}</p>
+      <img src="${el.channelPhoto}" alt="" />
+    `
+  );
+});
