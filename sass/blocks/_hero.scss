@@ -51,9 +51,6 @@ body {
     color: #aaa;
     padding-left: 10px;
   }
-  .bi .bi-house-door-fill{
-    
-  }
-   .filter__li{
-    @include d-flex();
-  }
+.filter__li{
+  @include d-flex();
+}
