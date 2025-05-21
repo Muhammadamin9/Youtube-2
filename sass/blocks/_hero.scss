@@ -53,3 +53,6 @@ body {
   .bi bi-house-door-fill{
     
   }
+   .filter__li{
+    @include d-flex();
+  }
