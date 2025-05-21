@@ -3,6 +3,9 @@
 }
 .main-list__videos{
     display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    gap: 20px;
 }
 .main-list__item{
     width: 300px;
@@ -17,7 +20,7 @@
 .text-section{
     display: flex;
 }
-.vidio-avatar{
+.video-avatar{
     border-radius: 50%;
     margin-top: 15px;
     margin-left: 20px;
