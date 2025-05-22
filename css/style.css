@@ -156,7 +156,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .main-list__item {
@@ -185,7 +186,7 @@ header {
 
 .video-name {
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   margin-top: 10px;
   margin-left: 10px;
