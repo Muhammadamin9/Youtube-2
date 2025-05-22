@@ -1,6 +1,7 @@
 header{
     padding: 10px 0;
     position: relative;
+    margin-top: 5px;
 }
 .header__wrapper {
     @include d-flex(0,space-between);
@@ -18,7 +19,7 @@ header{
     outline: none;
     background-color: black;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     color: gray;
 }
 .header__search-button {
@@ -27,6 +28,7 @@ header{
     background-image: url('../../img/SearchBox-Button.svg');
     width: 64px;
     height: 40px;
+    border-radius: 0 10px 10px 0;
 }
 .header__mic-button {
     border: none;
