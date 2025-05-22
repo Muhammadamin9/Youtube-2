@@ -3,47 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
+    <title>Youtube/create video</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./img/youtube-logo-Photoroom.png">
-    <link rel="icon" type="image/png" sizes="52x52" href="./img/youtube-logo-Photoroom.png">
-    <link rel="icon" type="image/png" sizes="52x52" href="/img/youtube-logo-Photoroom.png">
+    <link rel="icon" type="image/png" href="./img/create.png">
 </head>
 <body>
-    <header>
-        
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__left-side">
-                    <img src="./img/icon.svg" alt="">
-                    <button class="header__icon"></button>
-                </div>
-                <div class="header__search">
-                    <form action="#">
-                    <input placeholder="Search" type="text" class="header__input">
-                    <button class="header__search-button" type="submit"></button>
-                    </form>
-                      <ul class="history-ul">
-                        <li>HER</li>
-                      </ul>
-                    
-                    <button class="header__mic-button"></button>
-                </div>
-                <div class="header__right-side">
-                    <a href="./createVideo.html" class="header__button header__create-button"></a>
-                    <button class="header__button header__app-button"></button>
-                    <button class="header__button header__notifications-button"></button>
-                    <button class="header__button header__profile-button"></button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container">
-              <div class="main-videos">
-                <div class="hero__wrapper">
-                    <div class="hero__filter">
+    <section class="create-video__section">
+         <div class="hero__filter">
                         <!-- Fozil -->
 
                     
@@ -148,45 +114,32 @@
                               </div>
                         
                         <!-- Fozil -->
-                    </div>
-                   <div class="hero__videos">
-                    <!-- nemat -->
-                    <!-- nemat -->
-                   </div>
-                </div>
-   <!--Nemat-->
-<ul class="main-list__videos">
-<!-- <li class="main-list__item">
-<div class="img-section">
-  <div class="img">
-    <img class="item-img" src="./yoq-deyish.avif" alt="">
-  </div>
-  <div class="video-size">23:45</div>
-</div>
-<div class="text-section">
-<div class="img-section2">
-<img class="vidio-avatar" src="./User-Avatar.png" alt="">
-</div>
-<div class="text-section2">
-  <p class="video-name">Lorem ipsum dolor sit amet, consecte 
-adipiscing elit.</p>
-<p class="chanel-name"> James Gouse</p>
-<div class="video-info">
-<p class="video-viwes">15K Views </p>
-<p class="video-time">1 week ago</p>
-</div>
-</div>
-</div>
-</li> -->
+    </div>
+    <div class="container">
+    <form action="#" class="create-video__platform">
+  <label for="video-name">
+    Enter video name here:
+    <input type="text" name="video-name" class="video-name create-video__input" id="video-name">
+  </label>
 
-</ul>
- <!--Nemat-->
- </div>
-            </div>
-        </section>
-    </main>
+  <label for="video-category">
+    Enter video category here:
+    <input type="text" name="video-category" class="video-category create-video__input" id="video-category">
+  </label>
+
+  <label for="channel-name">
+    Enter channel name here:
+    <input type="text" name="channel-name" class="channel-name create-video__input" id="channel-name">
+  </label>
+
+  <!-- Кнопка отправки -->
+  <button type="submit" class="create-video__button">Submit</button>
+</form>
+
+    </div>   
+
+    </section>
     <script src="./js/youtube.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="js/createVideo.js"></script>
+    <script src="./js/createVideo.js"></script>
 </body>
 </html>
