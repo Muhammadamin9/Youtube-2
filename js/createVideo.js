@@ -32,7 +32,3 @@ ggForm.addEventListener('submit', function(elemnt) {
   console.log(newObject);
 
 });
-// f
-
-
-// GG

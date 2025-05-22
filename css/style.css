@@ -143,12 +143,12 @@ header {
   display: none; /* <- Скрывает список */
   cursor: pointer;
   z-index: 10;
-  background-color: #212121;
+  background-color: rgb(25, 25, 25);
   border-radius: 20px;
 }
 
 .history-li {
-  background-color: #212121;
+  background-color: rgb(25, 25, 25);
   width: 100%;
   height: 40px;
   text-align: center;
@@ -161,11 +161,23 @@ header {
 }
 
 .history-li:hover {
-  background-color: #191919;
+  background-color: #212121;
 }
 
 .border {
   border-radius: 20px;
+}
+
+.header-list__icon {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../img/icon.svg");
+}
+
+.history-ul {
+  padding: 10px;
 }
 
 .main-videos {
@@ -175,7 +187,6 @@ header {
 .main-list__videos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
   justify-content: center;
 }
@@ -316,6 +327,10 @@ form {
 
 .filter__link {
   color: white;
+}
+
+.hero__filter {
+  display: none;
 }
 
 .create-video__platform {

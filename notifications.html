@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube/create video</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./img/create.png">
+    <title>Youtube/notifications</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="./img/notifications.png">
+    <style>
+        .div-smile{
+            background-image: url('./img/sadEmoji-Photoroom.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .notifications-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
-    <section class="create-video__section">
-         <div class="hero__filter">
+    <header style="text-align: center;">
+        <div class="container">
+           <div class="notifications-wrapper">
+           
+              <div class="hero__filter">
                         <!-- Fozil -->
 
                     
@@ -114,31 +131,14 @@
                               </div>
                         
                         <!-- Fozil -->
-    </div>
-    <div class="container">
-    <form action="#" class="create-video__platform">
-  <label for="video-name">
-    Enter video name here:
-    <input type="text" name="video-name" class="video-name create-video__input" id="video-name">
-  </label>
-
-  <label for="video-category">
-    Enter video category here:
-    <input type="text" name="video-category" class="video-category create-video__input" id="video-category">
-  </label>
-
-  <label for="channel-name">
-    Enter channel name here:
-    <input type="text" name="channel-name" class="channel-name create-video__input" id="channel-name">
-  </label>
-
-  <!-- Кнопка отправки -->
-  <button type="submit" class="create-video__button">Submit</button>
-</form>
-
-    </div>   
-
-    </section>
+                    </div>
+                      <div class="just-box">
+                <h1>No noitifications yet</h1>
+            <div style="width: 500px;height: 500px;border-radius: 100%;border: 3px solid white;" class="div-smile"></div>
+            </div>
+           </div>
+        </div>
+    </header>
     <script src="./js/youtube.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/createVideo.js"></script>

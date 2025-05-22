@@ -4,7 +4,12 @@ let videosUl = document.querySelector('.main-list__videos');
 let searchInput = document.querySelector('.header__input');
 let youtubeLogo = document.querySelector('.header__icon');
 let createButton = document.querySelector('.header__create-button');
+let listIcon = document.querySelector('.header-list__icon');
+let heroFilter = document.querySelector('.hero__filter');
+listIcon.addEventListener('click',function(){
+heroFilter.setAttribute('style','display:inline-block');
 
+});
 createButton.addEventListener('click',function(){
 
 });
@@ -98,3 +103,69 @@ function renderVideos(videosArray) {
 }
 
 renderVideos(videoData);  
+const micButton = document.querySelector('.header__mic-button');
+
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+if (SpeechRecognition) {
+  const recognition = new SpeechRecognition();
+  recognition.lang = 'uz-UZ'; 
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  micButton.addEventListener('click', () => {
+    recognition.start();
+    micButton.setAttribute('style','background-color:red;');
+  });
+
+  recognition.addEventListener('result', (event) => {
+    const transcript = event.results[0][0].transcript;
+    
+    searchInput.value = transcript;
+   
+    form.dispatchEvent(new Event('submit'));
+
+  });
+
+  recognition.addEventListener('end', () => {
+  });
+
+  recognition.addEventListener('error', (e) => {
+    console.error( e.error);
+  });
+} 
+videoItem = document.querySelector('.main-list__item');
+videoItem.addEventListener('click',function(){
+
+});
+if (SpeechRecognition) {
+  const recognition = new SpeechRecognition();
+  recognition.lang = 'en-US'; 
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  micButton.addEventListener('click', () => {
+    recognition.start();
+    micButton.setAttribute('style','background-color:red;');
+  });
+
+  recognition.addEventListener('result', (event) => {
+    const transcript = event.results[0][0].transcript;
+    
+    searchInput.value = transcript;
+   
+    form.dispatchEvent(new Event('submit'));
+
+  });
+
+  recognition.addEventListener('end', () => {
+  });
+
+  recognition.addEventListener('error', (e) => {
+    console.error( e.error);
+  });
+} 
+let videoItem = document.querySelector('.main-list__item');
+videoItem.addEventListener('click',function(){
+  
+});
