@@ -11,10 +11,10 @@ body {
     padding: 10px;
     height: 100vh;
     overflow-y: auto;
-    
-   
   }
- 
+     .sidebar::-webkit-scrollbar {
+  width: 0;
+}
   .menu,
   .subscriptions {
     list-style: none;
@@ -52,4 +52,11 @@ body {
     font-size: 14px;
     color: #aaa;
     padding-left: 10px;
+  }
+
+  form{
+    display: flex;
+  }
+  .filter__link{
+    color: white;
   }
