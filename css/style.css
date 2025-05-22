@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -130,22 +131,41 @@ header {
   background-color: transparent;
 }
 
+.header__search {
+  position: relative;
+}
+
 .history-ul {
   position: absolute;
   color: white;
   width: 470px;
   top: 50px;
-  display: none;
-}
-
-.header__search {
-  position: relative;
+  display: none; /* <- Скрывает список */
+  cursor: pointer;
+  z-index: 10;
+  background-color: #212121;
+  border-radius: 20px;
 }
 
 .history-li {
-  border: 1px solid grey;
-  padding: 10px;
-  border-radius: 10px;
+  background-color: #212121;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.history-li:hover {
+  background-color: #191919;
+}
+
+.border {
+  border-radius: 20px;
 }
 
 .main-videos {
@@ -155,7 +175,7 @@ header {
 .main-list__videos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
   justify-content: center;
 }
@@ -296,4 +316,47 @@ form {
 
 .filter__link {
   color: white;
+}
+
+.create-video__platform {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  flex-direction: column;
+  gap: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.create-video__section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.create-video__input {
+  width: 450px;
+  background-color: #000000;
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+  padding: 20px;
+  color: white;
+  outline: none;
+}
+
+.create-video__button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.create-video__button:hover {
+  background-color: #101010;
 }/*# sourceMappingURL=style.css.map */

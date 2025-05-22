@@ -1,0 +1,41 @@
+.create-video__platform {
+@include d-flex();
+flex-direction: column;
+gap: 30px;  
+user-select: none;
+
+}
+.container {
+}
+.create-video__p {
+}
+.video-name {
+}
+.video-category {
+}
+.channel-name {
+}
+.create-video__section{
+    @include d-flex();
+}
+.create-video__input{
+    width: 450px;
+    background-color: #000000;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    padding: 20px;
+    color: white;
+    outline: none
+}
+.create-video__button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.create-video__button:hover{
+    background-color: #101010;
+}
