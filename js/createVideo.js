@@ -1,11 +1,11 @@
-let videoForm = document.querySelector('.create-video__platform');
+let ggForm = document.querySelector('.create-video__platform');
 let videoName = document.querySelector('.video-name');
 let channelName = document.querySelector('.channel-name');
 let videoCategory = document.querySelector('.video-category');
 let id = 9;
 
-videoForm.addEventListener('submit', function(e) {
-  e.preventDefault();
+ggForm.addEventListener('submit', function(elemnt) {
+  elemnt.preventDefault();
 
   if (
     videoCategory.value.trim() === '' ||
@@ -30,4 +30,6 @@ videoForm.addEventListener('submit', function(e) {
   videoData.push(newObject);
   localStorage.setItem('newObject', JSON.stringify(newObject));
   console.log(newObject);
+
 });
+// f
