@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-
->>>>>>> b4bb57f03283676587e2b8962976194890d8596a
-=======
-
-
->>>>>>> 2161307bd8a1a0451e0bbf7aa8b65c3f472780da
 let youtubeLogo = document.querySelector('.header__icon');
 youtubeLogo.addEventListener('click',function(){
   location.reload();
