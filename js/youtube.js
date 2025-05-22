@@ -23,7 +23,7 @@ let videoData = [
     duration: "5:15",
     thumbnail: "thumbnails/yoq-deyish.avif",
     category: "Shaxsiy rivojlanish",
-
+    src: "https://www.youtube.com/embed/VaKz4Jbe6C0",
   },
   {
     id: 3,

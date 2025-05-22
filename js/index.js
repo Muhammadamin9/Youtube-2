@@ -13,9 +13,11 @@ youtubeLogo.addEventListener('click',function(){
   location.reload();
 });
 
+let historyUl = document.querySelector('.history-ul');
+let form = document.querySelector('form');
 let videosUl = document.querySelector('.main-list__videos');
 let searchInput = document.querySelector('.header__input');
-searchInput.addEventListener('input',function(){
+form.addEventListener('submit',function(){
   let filteredVideo = videoData.filter((el)=>el.title.toLowerCase().includes(searchInput.value.toLowerCase()));
   renderVideos(filteredVideo);
 });
@@ -87,5 +89,3 @@ arr.forEach(el => {
 }
 display(videoData);
 display(videoData);
-
-let historyUl = document.querySelector('.history-ul');
