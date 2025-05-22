@@ -50,7 +50,6 @@ form.addEventListener('submit', function (e) {
     searchHistory.push(inputValue);
     localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
   }
-
   displayHistory();
 });
 searchInput.addEventListener('blur', () => {
