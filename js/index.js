@@ -1,7 +1,5 @@
 
-youtubeLogo.addEventListener('click',function(){
-  location.reload();
-});
+
 
 let historyUl = document.querySelector('.history-ul');
 let form = document.querySelector('form');
@@ -9,7 +7,9 @@ let videosUl = document.querySelector('.main-list__videos');
 let searchInput = document.querySelector('.header__input');
 let youtubeLogo = document.querySelector('.header__icon');
 let createButton = document.querySelector('.header__create-button');
-
+youtubeLogo.addEventListener("click", function () {
+  location.reload();
+});
 createButton.addEventListener('click',function(){
 
 });
