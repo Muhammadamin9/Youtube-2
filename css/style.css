@@ -339,27 +339,39 @@ form {
   justify-content: flex-start;
   gap: 0;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  padding: 40px;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .create-video__section {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 0;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .create-video__input {
   width: 450px;
-  background-color: #000000;
-  border-radius: 20px;
-  border: none;
-  height: 30px;
-  padding: 20px;
-  color: white;
+  height: 48px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  border: 1px solid #333;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.create-video__input:focus {
+  border-color: #3ea6ff;
+  box-shadow: 0 0 0 3px rgba(62, 166, 255, 0.3);
   outline: none;
 }
 
@@ -367,11 +379,30 @@ form {
   width: 200px;
   height: 50px;
   border: none;
-  background-color: black;
+  background-color: #3ea6ff;
   color: white;
-  border-radius: 20px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.create-video__button:hover {
+  background-color: #1e90ff;
+}
+.create-video__button:active {
+  transform: scale(0.98);
 }
 
-.create-video__button:hover {
-  background-color: #101010;
+.video-name,
+.video-category,
+.channel-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.create-video__p {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
