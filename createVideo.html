@@ -3,70 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
+    <title>Youtube/create video</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./img/3146788_youtube_logo_icon.png">
-    
+    <link rel="icon" type="image/png" href="./img/create.png">
 </head>
 <body>
-    <header>
-        
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__left-side">
-                  <button class="header-list__icon"></button>
-                    <button class="header__icon"></button>
-                    <img src="./img/Logo.svg" alt="">
-                </div>
-                <div class="header__search">
-                    <form action="#">
-                    <input placeholder="Search" type="text" class="header__input">
-                    <button class="header__search-button" type="submit"></button>
-                    </form>
-                      <ul class="history-ul">
-                      </ul>
-                    
-                    <button class="header__mic-button"></button>
-                </div>
-                <div class="header__right-side">
-                    <a href="./createVideo.html" class="header__button header__create-button"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.google.android.youtube&pli=1" target="_blank" class="header__button header__app-button"></a>
-                    <a href="./notifications.html" class="header__button header__notifications-button"></a>
-                    <button class="header__button header__profile-button"></button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container">
-              <div class="main-videos">
-                <div class="hero__wrapper">
-                    <div class="hero__filter">
-                        <!-- Fozil -->
+    <section class="create-video__section">
 
-                    
-                            <div class="sidebar">
-                                <ul class="menu">
-                                    <li class="filter__li"  style="color: white; cursor: pointer; "><svg   xmlns="http://www.w3.org/2000/svg"  width="38px" height="16px" fill="currentColor"  viewBox="0 0 16 16">
-                                      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
-                                    </svg> <a href="./index.html" class="filter__link">Home</a></li><br>
-                                  <li class="filter__li"  style="color: white;cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="38px" height="16" fill="currentColor"  viewBox="0 0 16 16">
-                                    <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
-                                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
-                                  </svg> Explore</li><br>
-                                  <li class="filter__li"  style="color: white;cursor: pointer;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="38px" height="16" fill="currentColor"  viewBox="0 0 16 16">
-                                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                                    </svg>
-                                  Subscriptions</li><br>
-                                </ul>
-                            
-                                <ul class="menu">
-                                  <li class="filter__li" style="color: white;cursor: pointer;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="38px" height="16" fill="currentColor"  viewBox="0 0 16 16">
-                                      <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848z"/>
-                                      <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"/>
+    <div class="container">
+       <div class="sidebar" style="position: absolute; left: 0;top: 0;">
+          <ul class="menu">
+          <a href="./index.html" class="filter__link">
+          <li class="filter__li"  style="color: white; cursor: pointer; "><svg   xmlns="http://www.w3.org/2000/svg"  width="38px" height="16px" fill="currentColor"  viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+          </svg> Home</li><br>
+          </a>
+          <li class="filter__li"  style="color: white;cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="38px" height="16" fill="currentColor"  viewBox="0 0 16 16">
+          <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+          <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+          </svg> Explore</li><br>
+          <li class="filter__li"  style="color: white;cursor: pointer;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38px" height="16" fill="currentColor"  viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+          </svg>
+          Subscriptions</li><br>
+          </ul>
+
+          <ul class="menu">
+          <li class="filter__li" style="color: white;cursor: pointer;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38px" height="16" fill="currentColor"  viewBox="0 0 16 16">
+            <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"/>
+            <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848z"/>
                                     </svg>
                                 Library</li><br>
                                   <li  class="filter__li" style="color: white;cursor: pointer;">
@@ -144,46 +111,32 @@
                                     </svg>
                                   Live</li>
                                 </ul>
-                              </div>
-                        
-                        <!-- Fozil -->
-                    </div>
-                   <div class="hero__videos">
-                    <!-- nemat -->
-                    <!-- nemat -->
-                   </div>
-                </div>
-   <!--Nemat-->
-<ul class="main-list__videos">
-<!-- <li class="main-list__item">
-<div class="img-section">
-  <div class="img">
-    <img class="item-img" src="./yoq-deyish.avif" alt="">
-  </div>
-  <div class="video-size">23:45</div>
-</div>
-<div class="text-section">
-<div class="img-section2">
-<img class="vidio-avatar" src="./User-Avatar.png" alt="">
-</div>
-<div class="text-section2">
-  <p class="video-name">Lorem ipsum dolor sit amet, consecte 
-adipiscing elit.</p>
-<p class="chanel-name"> James Gouse</p>
-<div class="video-info">
-<p class="video-viwes">15K Views </p>
-<p class="video-time">1 week ago</p>
-</div>
-</div>
-</div>
-</li> -->
+    </div>
+   <div class="create-video__platform">
+  <h2 class="video-name">Upload a New Video</h2>
+  <p class="create-video__p">Fill in the details below to add your video.</p>
+  
+  <form action="#" class="create-video__section">
+    <input class="create-video__input" type="text" placeholder="Video Title" id="video-title">
+    <select class="create-video__input" id="video-category">
+  <option value="Music">Music</option>
+  <option value="Shaxsiy rivojlanish">Shaxsiy rivojlanish</option>
+  <option value="Texnologiya">Texnologiya</option>
+  <option value="Madaniyat">Madaniyat</option>
+  <option value="O‘yinlar">O‘yinlar</option>
+  <option value="Motivatsiya">Motivatsiya</option>
+  <option value="Sport">Sport</option>
+</select>
 
-</ul>
- <!--Nemat-->
- </div>
-            </div>
-        </section>
-    </main>
+    <input class="create-video__input" type="text" placeholder="Channel Name" id="channel-name">
+    <button class="create-video__button" id="upload-btn">Upload</button>
+  </form>
+</div>
+
+
+    </div>   
+
+    </section>
     <script src="./js/youtube.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/createVideo.js"></script>

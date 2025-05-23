@@ -3,46 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./img/3146788_youtube_logo_icon.png">
-    
+    <title>Youtube/notifications</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="./img/notifications.png">
+    <style>
+        .div-smile{
+            background-image: url('./img/sadEmoji-Photoroom.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .notifications-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        
+    <header style="text-align: center;">
         <div class="container">
-            <div class="header__wrapper">
-                <div class="header__left-side">
-                  <button class="header-list__icon"></button>
-                    <button class="header__icon"></button>
-                    <img src="./img/Logo.svg" alt="">
-                </div>
-                <div class="header__search">
-                    <form action="#">
-                    <input placeholder="Search" type="text" class="header__input">
-                    <button class="header__search-button" type="submit"></button>
-                    </form>
-                      <ul class="history-ul">
-                      </ul>
-                    
-                    <button class="header__mic-button"></button>
-                </div>
-                <div class="header__right-side">
-                    <a href="./createVideo.html" class="header__button header__create-button"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.google.android.youtube&pli=1" target="_blank" class="header__button header__app-button"></a>
-                    <a href="./notifications.html" class="header__button header__notifications-button"></a>
-                    <button class="header__button header__profile-button"></button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container">
-              <div class="main-videos">
-                <div class="hero__wrapper">
-                    <div class="hero__filter">
+           <div class="notifications-wrapper">
+           
+              <div class="hero__filter">
                         <!-- Fozil -->
 
                     
@@ -148,42 +132,13 @@
                         
                         <!-- Fozil -->
                     </div>
-                   <div class="hero__videos">
-                    <!-- nemat -->
-                    <!-- nemat -->
-                   </div>
-                </div>
-   <!--Nemat-->
-<ul class="main-list__videos">
-<!-- <li class="main-list__item">
-<div class="img-section">
-  <div class="img">
-    <img class="item-img" src="./yoq-deyish.avif" alt="">
-  </div>
-  <div class="video-size">23:45</div>
-</div>
-<div class="text-section">
-<div class="img-section2">
-<img class="vidio-avatar" src="./User-Avatar.png" alt="">
-</div>
-<div class="text-section2">
-  <p class="video-name">Lorem ipsum dolor sit amet, consecte 
-adipiscing elit.</p>
-<p class="chanel-name"> James Gouse</p>
-<div class="video-info">
-<p class="video-viwes">15K Views </p>
-<p class="video-time">1 week ago</p>
-</div>
-</div>
-</div>
-</li> -->
-
-</ul>
- <!--Nemat-->
- </div>
+                      <div class="just-box">
+                <h1>No noitifications yet</h1>
+            <div style="width: 500px;height: 500px;border-radius: 100%;border: 3px solid white;" class="div-smile"></div>
             </div>
-        </section>
-    </main>
+           </div>
+        </div>
+    </header>
     <script src="./js/youtube.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/createVideo.js"></script>

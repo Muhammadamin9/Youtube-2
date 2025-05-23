@@ -11,10 +11,10 @@ body {
     padding: 10px;
     height: 100vh;
     overflow-y: auto;
-    
-   
   }
- 
+  .sidebar::-webkit-scrollbar {
+  width: 0;
+}
   .menu,
   .subscriptions {
     list-style: none;
@@ -30,7 +30,7 @@ body {
     padding: 8px 10px;
     cursor: pointer;
     border-radius: 6px;
-    transition: background 0.3s;
+    transition: 0.3s;
   }
   
   .menu li:hover,
@@ -52,4 +52,18 @@ body {
     font-size: 14px;
     color: #aaa;
     padding-left: 10px;
+  }
+
+  form{
+    display: flex;
+  }
+  .filter__link{
+    color: white;
+  }
+
+  .hero__filter{
+    display: none;
+  }
+  .sidebar{
+    border-radius: 20px 0 20px 0;
   }

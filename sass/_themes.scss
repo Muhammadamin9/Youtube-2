@@ -1,0 +1,6 @@
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  @include transition(background-color, color);
+}

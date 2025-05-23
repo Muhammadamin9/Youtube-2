@@ -105,4 +105,18 @@ let videoData = [
     category: "Sport",
     src: "https://www.youtube.com/embed/XXYbVpkI-UY",
   },
+  {
+    id: 8,
+    title: "Rating My Subscribers Blox fruits Combos for 50 Hours..",
+    channel: "WinterKloudz",
+    channelPhoto:
+      "https://yt3.googleusercontent.com/x-8TYt66dDbm8ZWyLMEQrifOyoCwvV7sSpjWvhwKovYDbYJN1YYkH2Q7fRNszAlr6o_qQcFq4Ts=s160-c-k-c0x00ffffff-no-rj",
+    views: "1M",
+    uploaded: "11 month ago",
+    duration: "20:23",
+    thumbnail: "/thumbnails/Снимок\ экрана\ 2025-05-22\ 161632.png",
+    category: "O‘yinlar",
+    src: "https://youtu.be/qY-Qjhlz0rA?si=laiIycA005GsEyiG",
+  }
 ];
+
