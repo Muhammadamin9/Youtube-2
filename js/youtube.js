@@ -5,7 +5,7 @@ let videoData = [
     channel: "X-Faktor O'zbekiston",
     channelPhoto:
       "https://yt3.ggpht.com/Om0mmOcWC-yPkRyAaoF00KZrnbNEQbTg-zK7Ebk62UfqjHGiY_1UtaR9ul9qfb8EyGI27bYHHh4=s68-c-k-c0x00ffffff-no-rj",
-    views: "1 млн просмотров",
+    views: "1000",
     uploaded: "1 год назад",
     duration: "9:22",
     thumbnail: "thumbnails/ruxsora.avif",
@@ -19,7 +19,7 @@ let videoData = [
     channel: "Maqsad Club",
     channelPhoto:
       "https://yt3.ggpht.com/BV5IwOdY0X_eLqssWRI3cc_w73WfzDAAhBxXjWHVruyVKKyYCg4mtBgB0bsmm30i_488Bkym8A=s68-c-k-c0x00ffffff-no-rj",
-    views: "52K",
+    views: "52000",
     uploaded: "2 hafta oldin",
     duration: "5:15",
     thumbnail: "thumbnails/yoq-deyish.avif",
@@ -34,7 +34,7 @@ let videoData = [
     channel: "birfoizbilim",
     channelPhoto:
       "https://yt3.ggpht.com/R-bmxKk1oz327JRWlcmigEC6i7WflcFk7zzlODvYGLZ2iZZi2l-kyR2_Ac2ZPXB4TrE8GWrUYQ=s68-c-k-c0x00ffffff-no-rj",
-    views: "71K",
+    views: "710000",
     uploaded: "1 oy oldin",
     duration: "21:17",
     thumbnail: "thumbnails/ai-5x.avif",
@@ -48,7 +48,7 @@ let videoData = [
     channel: "Xayrulla Asatov",
     channelPhoto:
       "https://yt3.ggpht.com/0YTYDIIniz5lCR0vKyXoBvbAZ2lkIr9iW8nFp_TjiQKveU0wd-ClNhoMHxlvvG5OvdV6oUW5kpQ=s68-c-k-c0x00ffffff-no-rj",
-    views: "381K",
+    views: "38100",
     uploaded: "5 kun oldin",
     duration: "4:53",
     thumbnail: "thumbnails/tirik-kitob.avif",
@@ -62,7 +62,7 @@ let videoData = [
     channel: "UPG",
     channelPhoto:
       "https://yt3.ggpht.com/2Qw5nLGk206cx1UzvsbJZh_kcW6gAtQnHT0bniVrl4bqG1RMrSJH-B-J0UX8Xltljv0RExpD=s68-c-k-c0x00ffffff-no-rj",
-    views: "49K",
+    views: "490",
     uploaded: "3 kun oldin",
     duration: "16:24",
     thumbnail: "thumbnails/minecraft.avif",
@@ -76,7 +76,7 @@ let videoData = [
     channel: "Nurli Media",
     channelPhoto:
       "https://yt3.ggpht.com/ytc/AIdro_lTB6EGmAFhNDtpfRzK52Xsl4RtieuMLl1qj4uYcuv7Mw=s68-c-k-c0x00ffffff-no-rj",
-    views: "338K",
+    views: "3380",
     uploaded: "1 yil oldin",
     duration: "17:26",
     thumbnail: "thumbnails/aqlliroq.avif",
@@ -91,7 +91,7 @@ let videoData = [
     channel: "DAVRONBEK TURDIEV",
     channelPhoto:
       "https://yt3.ggpht.com/NgMI5B2Sw4YiMFP4LQw5bNq4sTsBioMDXckxjxaOUTIfdkAS85R2Uzfhv5XAaEbY_Uk6pHUdfQ=s68-c-k-c0x00ffffff-no-rj",
-    views: "170K",
+    views: "1700",
     uploaded: "3 hafta oldin",
     duration: "27:51",
     thumbnail: "thumbnails/dangasalikka-qarshi.avif",
@@ -105,7 +105,7 @@ let videoData = [
     channel: "VALENTINO PRODUCTIONS",
     channelPhoto:
       "https://yt3.ggpht.com/vyfJhgtTbO-NC8ymcLHCdtO7MhIIwReE2AxyP4jEljAdhh5MBOK1bQWeLheebwYW-3YttvNUrA=s68-c-k-c0x00ffffff-no-rj",
-    views: "10M",
+    views: "100",
     uploaded: "1 yil oldin",
     duration: "15:48",
     thumbnail: "thumbnails/ronaldo.avif",
@@ -119,7 +119,7 @@ let videoData = [
     channel: "WinterKloudz",
     channelPhoto:
       "https://yt3.googleusercontent.com/x-8TYt66dDbm8ZWyLMEQrifOyoCwvV7sSpjWvhwKovYDbYJN1YYkH2Q7fRNszAlr6o_qQcFq4Ts=s160-c-k-c0x00ffffff-no-rj",
-    views: "1M",
+    views: "10000",
     uploaded: "11 month ago",
     duration: "20:23",
     thumbnail: "/thumbnails/Снимок экрана 2025-05-22 161632.png",

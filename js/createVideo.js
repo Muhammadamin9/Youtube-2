@@ -1,34 +1,38 @@
-let ggForm = document.querySelector('.create-video__platform');
-let videoName = document.querySelector('.video-name');
-let channelName = document.querySelector('.channel-name');
-let videoCategory = document.querySelector('.video-category');
-let id = 9;
+videoData = videoData || JSON.parse(localStorage.getItem('videoData')) || [];
+let i = videoData.length;
+const createVideoForm = document.getElementById('upload-btn');
+const titleInput = document.getElementById('video-title');
+const categoryInput = document.getElementById('video-category');
+const channelInput = document.getElementById('channel-name');
 
-ggForm.addEventListener('submit', function(elemnt) {
-  elemnt.preventDefault();
+function saveToLocalStorage() {
+  localStorage.setItem('videoData', JSON.stringify(videoData));
+}
 
-  if (
-    videoCategory.value.trim() === '' ||
-    videoName.value.trim() === '' ||
-    channelName.value.trim() === ''
-  ) {
+createVideoForm.addEventListener('submit', () => {
+  const title = titleInput.value.trim();
+  const category = categoryInput.value;
+  const channel = channelInput.value.trim();
+
+  if (!title || !category || !channel) {
+    alert('Please fill in all fields');
     return;
   }
 
-  let newObject = {
-    title: videoName.value,
-    channel: channelName.value,
-    category: videoCategory.value,
-    id: id++,
-    views: 0,
-    uploaded: 'Now',
-    duration: '00:01:00',
-    thumbnail: "thumbnails/whiteFone.jpg",
-    channelPhoto: "img/Profile-pic.svg",
+  const newVideo = {
+    id: ++i,
+    title,
+    category,
+    channel,
   };
 
-  videoData.push(newObject);
-  localStorage.setItem('newObject', JSON.stringify(newObject));
-  console.log(newObject);
+  videoData.push(newVideo);
+  saveToLocalStorage();
 
+  titleInput.value = '';
+  categoryInput.value = ''; 
+  channelInput.value = '';
 });
+
+const gotCreatedVideo = JSON.parse(localStorage.getItem('videoData'));
+console.log(gotCreatedVideo);

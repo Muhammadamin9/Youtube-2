@@ -1,41 +1,105 @@
 .create-video__platform {
-@include d-flex();
-flex-direction: column;
-gap: 30px;  
-user-select: none;
+  @include d-flex();
+  flex-direction: column;
+  gap: 24px;
+  user-select: none;
+  padding: 40px;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.create-video__section {
+  @include d-flex(0,center);
+  flex-direction: column;
+  gap: 60px;
 }
-.container {
+
+.create-video__input {
+  width: 450px;
+  height: 48px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  border: 1px solid #333;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  &:focus {
+    border-color: #3ea6ff;
+    box-shadow: 0 0 0 3px rgba(62, 166, 255, 0.3);
+    outline: none;
+  }
 }
-.create-video__p {
+
+.create-video__button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #3ea6ff;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #1e90ff;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
-.video-name {
-}
-.video-category {
-}
+
+.video-name,
+.video-category,
 .channel-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
 }
-.create-video__section{
-    @include d-flex();
+
+.create-video__p {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 10px;
 }
-.create-video__input{
-    width: 450px;
-    background-color: #000000;
-    border-radius: 20px;
-    border: none;
-    height: 30px;
-    padding: 20px;
-    color: white;
-    outline: none
+
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 0 16px;
+  height: 48px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
-.create-video__button{
-    width: 200px;
-    height: 50px;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
+
+.file-upload-wrapper:hover {
+  border-color: #3ea6ff;
+  box-shadow: 0 0 0 3px rgba(62, 166, 255, 0.3);
 }
-.create-video__button:hover{
-    background-color: #101010;
+
+.file-upload-button {
+  background-color: #3ea6ff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-upload-button:hover {
+  background-color: #1e90ff;
+}
+
+.file-upload-button:active {
+  transform: scale(0.98);
 }
