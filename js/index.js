@@ -5,15 +5,19 @@ let searchInput = document.querySelector('.header__input');
 let youtubeLogo = document.querySelector('.header__icon');
 let createButton = document.querySelector('.header__create-button');
 let listIcon = document.querySelector('.header-list__icon');
-let heroFilter = document.querySelector('.hero__filter');
+let count = 0 || JSON.parse(localStorage.getItem('count'));
+
 listIcon.addEventListener('click',function(){
-heroFilter.setAttribute('style','display:inline-block');
+  if(count % 2 == 0 ){
+  heroFilter.setAttribute('style','display:none');
 
-});
-createButton.addEventListener('click',function(){
-
-});
-
+  }
+  heroFilter.setAttribute('style','display:inline-block');
+  count++;
+  JSON.stringify(localStorage.setItem('count',count));
+  console.log(count);
+})
+let heroFilter = document.querySelector('.hero__filter');
 youtubeLogo.addEventListener('click',function(){
   location.reload();
 });

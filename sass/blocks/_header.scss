@@ -83,7 +83,7 @@ position: relative;
   color: white;
   width: 470px;
   top: 50px;
-  display: none;  /* <- Скрывает список */
+  display: none; 
   cursor: pointer;
   z-index: 10;
  background-color: rgb(25, 25, 25);
@@ -106,7 +106,8 @@ position: relative;
   border-radius: 20px;
 
 }
-.header-list__icon{
+.custom-input{
+    display: inline-block;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -116,3 +117,20 @@ position: relative;
 .history-ul{
     padding: 10px;
 }
+    .hero__filter{
+        transition: all .3s linear;
+    }
+
+    .list__icon{
+        animation: list-icon__animation .5s ease;
+    }
+    .sidebar{
+        transition: all .3s ease;
+    }
+    .header-list__icon{
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+        background-image: url('../../img/icon.svg');
+    }
