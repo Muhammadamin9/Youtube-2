@@ -11,6 +11,7 @@ let videoData = [
     thumbnail: "thumbnails/ruxsora.avif",
     category: "Music",
     videoSrc: "https://www.youtube.com/embed/8RBm0qKOmHY",
+    
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ let videoData = [
     thumbnail: "thumbnails/yoq-deyish.avif",
     category: "Shaxsiy rivojlanish",
     src: "https://www.youtube.com/embed/VaKz4Jbe6C0",
+  
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ let videoData = [
     thumbnail: "thumbnails/ai-5x.avif",
     category: "Texnologiya",
     src: "https://www.youtube.com/embed/Oxe8LZYK31w",
+
   },
   {
     id: 4,
@@ -51,6 +54,7 @@ let videoData = [
     thumbnail: "thumbnails/tirik-kitob.avif",
     category: "Madaniyat",
     src: "https://www.youtube.com/embed/bdEYgtmzQdk",
+   
   },
   {
     id: 5,
@@ -64,6 +68,7 @@ let videoData = [
     thumbnail: "thumbnails/minecraft.avif",
     category: "O‘yinlar",
     src: "https://www.youtube.com/embed/CgZ5ukSgubc",
+  
   },
   {
     id: 6,
@@ -77,6 +82,7 @@ let videoData = [
     thumbnail: "thumbnails/aqlliroq.avif",
     category: "Shaxsiy rivojlanish",
     src: "https://www.youtube.com/embed/cA1Q5bFY5Z8",
+
   },
   {
     id: 7,
@@ -91,6 +97,7 @@ let videoData = [
     thumbnail: "thumbnails/dangasalikka-qarshi.avif",
     category: "Motivatsiya",
     src: "https://www.youtube.com/embed/uul53emqf10",
+    
   },
   {
     id: 8,
@@ -104,6 +111,7 @@ let videoData = [
     thumbnail: "thumbnails/ronaldo.avif",
     category: "Sport",
     src: "https://www.youtube.com/embed/XXYbVpkI-UY",
+ 
   },
   {
     id: 8,
@@ -114,9 +122,10 @@ let videoData = [
     views: "1M",
     uploaded: "11 month ago",
     duration: "20:23",
-    thumbnail: "/thumbnails/Снимок\ экрана\ 2025-05-22\ 161632.png",
+    thumbnail: "/thumbnails/Снимок экрана 2025-05-22 161632.png",
     category: "O‘yinlar",
     src: "https://youtu.be/qY-Qjhlz0rA?si=laiIycA005GsEyiG",
-  }
+   
+  },
 ];
 

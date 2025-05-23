@@ -1,3 +1,6 @@
+
+
+
 let historyUl = document.querySelector('.history-ul');
 let form = document.querySelector('form');
 let videosUl = document.querySelector('.main-list__videos');
@@ -21,6 +24,9 @@ let heroFilter = document.querySelector('.hero__filter');
 youtubeLogo.addEventListener('click',function(){
   location.reload();
 });
+
+
+
 let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
 function displayHistory() {
    historyUl.innerHTML = ''; 
@@ -173,3 +179,31 @@ let videoItem = document.querySelector('.main-list__item');
 videoItem.addEventListener('click',function(){
   
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let korilingan = videoData.filter((el) => el.kor === "korilgan");
