@@ -3,9 +3,9 @@ let exploreList = document.querySelector(".explore__list");
 let exploreArr = [...videoData];
 console.log(exploreArr);
 
-function renderVideos(videosArray) {
+function renderVideo(videoArray) {
   exploreList.innerHTML= ``;
-  videosArray.forEach((el) => {
+  videogit Array.forEach((el) => {
     exploreList.innerHTML += `
      <li class="main-list__item">
         <div class="img-section">
@@ -33,4 +33,4 @@ function renderVideos(videosArray) {
     `;
   });
 }
-renderVideos(exploreArr);
+renderVideo(exploreArr);
