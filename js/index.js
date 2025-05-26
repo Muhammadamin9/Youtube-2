@@ -1,5 +1,5 @@
 let historyUl = document.querySelector('.history-ul');
-let form = document.querySelector('form');
+let searchForm = document.querySelector('.search-form');
 let videosUl = document.querySelector('.main-list__videos');
 let searchInput = document.querySelector('.header__input');
 let youtubeLogo = document.querySelector('.header__icon');
@@ -7,19 +7,18 @@ let createButton = document.querySelector('.header__create-button');
 let listIcon = document.querySelector('.header-list__icon');
 let count = 0 || JSON.parse(localStorage.getItem('count'));
 
-listIcon.addEventListener('click',function(){
-  if(count % 2 == 0 ){
-  heroFilter.setAttribute('style','display:none');
-  }
-  heroFilter.setAttribute('style','display:inline-block');
+listIcon.addEventListener('click', function() {
   count++;
-  JSON.stringify(localStorage.setItem('count',count));
+  if (count % 2 === 0) {
+    heroFilter.setAttribute('style', 'display: none');
+  } else {
+    heroFilter.setAttribute('style', 'display: inline-block');
+  }
+  localStorage.setItem('count', count); 
   console.log(count);
-})
-let heroFilter = document.querySelector('.hero__filter');
-youtubeLogo.addEventListener('click',function(){
-  location.reload();
 });
+
+
 let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
 function displayHistory() {
    historyUl.innerHTML = ''; 
@@ -31,7 +30,7 @@ function displayHistory() {
 
     li.addEventListener('click', () => {
       searchInput.value = el;
-      form.dispatchEvent(new Event('submit'));
+      searchForm.dispatchEvent(new Event('submit'));
     });
 
     historyUl.appendChild(li);
@@ -43,7 +42,7 @@ function displayHistory() {
 }
 searchInput.addEventListener('focus',displayHistory);
 
-form.addEventListener('submit', function (e) {
+searchForm.addEventListener('submit', function (e) {
   e.preventDefault();
 
   const inputValue = searchInput.value.trim();
@@ -97,6 +96,8 @@ function renderVideos(videosArray) {
             <div class="video-info">
               <p class="video-viwes">${el.views}</p>
               <p class="video-time">${el.uploaded}</p>
+                  <button class="watch__later-icon">👍</button>
+
             </div>
           </div>
         </div>
@@ -113,7 +114,7 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 
 if (SpeechRecognition) {
   const recognition = new SpeechRecognition();
-  recognition.lang = 'uz-UZ'; 
+  recognition.lang = 'uz-UZ','en-US'; 
   recognition.interimResults = false;
   recognition.maxAlternatives = 1;
 
@@ -127,7 +128,7 @@ if (SpeechRecognition) {
     
     searchInput.value = transcript;
    
-    form.dispatchEvent(new Event('submit'));
+    searchForm.dispatchEvent(new Event('submit'));
 
   });
 
@@ -142,34 +143,16 @@ videoItem = document.querySelector('.main-list__item');
 videoItem.addEventListener('click',function(){
 
 });
-if (SpeechRecognition) {
-  const recognition = new SpeechRecognition();
-  recognition.lang = 'en-US'; 
-  recognition.interimResults = false;
-  recognition.maxAlternatives = 1;
 
-  micButton.addEventListener('click', () => {
-    recognition.start();
-    micButton.setAttribute('style','background-color:red;');
-  });
-
-  recognition.addEventListener('result', (event) => {
-    const transcript = event.results[0][0].transcript;
-    
-    searchInput.value = transcript;
-   
-    form.dispatchEvent(new Event('submit'));
-
-  });
-
-  recognition.addEventListener('end', () => {
-  });
-
-  recognition.addEventListener('error', (e) => {
-    console.error( e.error);
-  });
-} 
 let videoItem = document.querySelector('.main-list__item');
 videoItem.addEventListener('click',function(){
   
 });
+
+
+let watchLater = document.querySelector('.watch__later-icon');
+let isVideoInWatchLater;
+watchLater.addEventListener('click',function(){
+isVideoInWatchLater=true;
+});
+

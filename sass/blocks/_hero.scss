@@ -1,69 +1,76 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #181818;
-    color: white;
-  }
-  
-  .sidebar {
-    width: 240px;
-    background-color: #202020;
-    padding: 10px;
-    height: 100vh;
-    overflow-y: auto;
-  }
-  .sidebar::-webkit-scrollbar {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #181818;
+  color: white;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #202020;
+  padding: 10px;
+  height: 100vh;
+  overflow-y: auto;
+}
+.sidebar::-webkit-scrollbar {
   width: 0;
 }
-  .menu,
-  .subscriptions {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0;
-    
-  }
-  
-  .menu li,
-  .subscriptions li {
-    display: flex;
-    align-items: center;
-    padding: 8px 10px;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: 0.3s;
-  }
-  
-  .menu li:hover,
-  .subscriptions li:hover {
-    background-color: #383838;
-  }
-  
+.menu,
+.subscriptions {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
 
-  
-  .subscriptions img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  h4 {
-    margin: 15px 0 5px;
-    font-size: 14px;
-    color: #aaa;
-    padding-left: 10px;
-  }
+.menu li,
+.subscriptions li {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
 
-  form{
-    display: flex;
-  }
-  .filter__link{
-    color: white;
-  }
+.menu li:hover,
+.subscriptions li:hover {
+  background-color: #383838;
+}
 
-  .hero__filter{
-    display: none;
-  }
-  .sidebar{
-    border-radius: 20px 0 20px 0;
-  }
+.subscriptions img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+h4 {
+  margin: 15px 0 5px;
+  font-size: 14px;
+  color: #aaa;
+  padding-left: 10px;
+}
+
+form {
+  display: flex;
+}
+.filter__link {
+  color: white;
+}
+
+.hero__filter {
+  display: none;
+}
+.sidebar {
+  border-radius: 20px 0 20px 0;
+}
+.watch__later-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+}
+.main-list__item{
+  position: relative;
+}
