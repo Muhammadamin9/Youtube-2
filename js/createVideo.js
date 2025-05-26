@@ -28,7 +28,6 @@ createVideoForm.addEventListener('submit', () => {
 
   videoData.push(newVideo);
   saveToLocalStorage();
-
   titleInput.value = '';
   categoryInput.value = ''; 
   channelInput.value = '';
