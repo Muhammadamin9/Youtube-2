@@ -86,6 +86,7 @@ function renderVideos(videosArray) {
     videosUl.insertAdjacentHTML(
       "beforeend",
       `
+     <a href="/detail.html">
       <li class="main-list__item">
         <div class="img-section">
           <div class="img">
@@ -111,6 +112,7 @@ function renderVideos(videosArray) {
           </div>
         </div>
       </li>
+     </a>
       `
     );
   });
