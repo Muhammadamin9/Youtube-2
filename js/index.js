@@ -10,7 +10,6 @@ let count = 0 || JSON.parse(localStorage.getItem('count'));
 listIcon.addEventListener('click',function(){
   if(count % 2 == 0 ){
   heroFilter.setAttribute('style','display:none');
-
   }
   heroFilter.setAttribute('style','display:inline-block');
   count++;
@@ -73,7 +72,8 @@ if(searchHistory.length>=10){
 }
 
 displayHistory();
-
+let usersVideo = JSON.parse(localStorage.getItem('newVideo'));
+console.log(usersVideo);
 function renderVideos(videosArray) {
   videosUl.innerHTML = ``;
   videosArray.forEach(el => {
