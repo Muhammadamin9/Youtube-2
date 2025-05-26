@@ -6,7 +6,10 @@ let youtubeLogo = document.querySelector('.header__icon');
 let createButton = document.querySelector('.header__create-button');
 let listIcon = document.querySelector('.header-list__icon');
 let count = 0 || JSON.parse(localStorage.getItem('count'));
+youtubeLogo.addEventListener('click',function(){
+location.reload();
 
+});
 listIcon.addEventListener('click', function() {
   count++;
   if (count % 2 === 0) {
