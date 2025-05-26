@@ -5,7 +5,7 @@ console.log(exploreArr);
 
 function renderVideo(videoArray) {
   exploreList.innerHTML= ``;
-  videogit Array.forEach((el) => {
+  videoArray.forEach((el) => {
     exploreList.innerHTML += `
      <li class="main-list__item">
         <div class="img-section">
