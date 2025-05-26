@@ -517,7 +517,7 @@ header {
   background-color: black;
   padding: 10px;
   border-radius: 10px 0 0 10px;
-  color: gray;
+  color: #fff;
 }
 
 .header__search-button {
