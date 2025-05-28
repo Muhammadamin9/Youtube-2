@@ -1,6 +1,7 @@
+let i = 0;
 let videoData = [
   {
-    id: 1,
+     id: ++i,
     title: "Ruhsora Emm - Under The Influence (Chris Brown)",
     channel: "X-Faktor O'zbekiston",
     channelPhoto:
@@ -10,11 +11,11 @@ let videoData = [
     duration: "9:22",
     thumbnail: "thumbnails/ruxsora.avif",
     category: "Music",
-    videoSrc: "https://www.youtube.com/embed/8RBm0qKOmHY",
+    src: "https://www.youtube.com/embed/8RBm0qKOmHY",
     
   },
   {
-    id: 2,
+     id: ++i,
     title: '"Yo‘q" deyishni bilish | Abdusattor Abduraximov',
     channel: "Maqsad Club",
     channelPhoto:
@@ -28,7 +29,7 @@ let videoData = [
   
   },
   {
-    id: 3,
+     id: ++i,
     title:
       "Sun’iy intellektni 5 karra yaxshiroq ishlating | Xurshid Maroziqov | Birfoiz",
     channel: "birfoizbilim",
@@ -43,7 +44,7 @@ let videoData = [
 
   },
   {
-    id: 4,
+     id: ++i,
     title: "Tirik kitob - Xayrulla Asatov - Тирик китоб",
     channel: "Xayrulla Asatov",
     channelPhoto:
@@ -57,7 +58,7 @@ let videoData = [
    
   },
   {
-    id: 5,
+     id: ++i,
     title: "Siz bilmagan Minecraft",
     channel: "UPG",
     channelPhoto:
@@ -71,7 +72,7 @@ let videoData = [
   
   },
   {
-    id: 6,
+     id: ++i,
     title: "Sizni Aqlliroq Qiluvchi 15 ta Odat!",
     channel: "Nurli Media",
     channelPhoto:
@@ -85,7 +86,7 @@ let videoData = [
 
   },
   {
-    id: 7,
+     id: ++i,
     title:
       "DANGASALIKKA QARSHI 10 ta Oddiy Ammo Kuchli Texnika (100% Ishlaydi!)",
     channel: "DAVRONBEK TURDIEV",
@@ -100,7 +101,7 @@ let videoData = [
     
   },
   {
-    id: 8,
+     id: ++i,
     title: "18 Years Old Cristiano Ronaldo was INSANE",
     channel: "VALENTINO PRODUCTIONS",
     channelPhoto:
@@ -112,20 +113,6 @@ let videoData = [
     category: "Sport",
     src: "https://www.youtube.com/embed/XXYbVpkI-UY",
  
-  },
-  {
-    id: 8,
-    title: "Rating My Subscribers Blox fruits Combos for 50 Hours..",
-    channel: "WinterKloudz",
-    channelPhoto:
-      "https://yt3.googleusercontent.com/x-8TYt66dDbm8ZWyLMEQrifOyoCwvV7sSpjWvhwKovYDbYJN1YYkH2Q7fRNszAlr6o_qQcFq4Ts=s160-c-k-c0x00ffffff-no-rj",
-    views: "10000",
-    uploaded: "11 month ago",
-    duration: "20:23",
-    thumbnail: "/thumbnails/Снимок экрана 2025-05-22 161632.png",
-    category: "O‘yinlar",
-    src: "https://youtu.be/qY-Qjhlz0rA?si=laiIycA005GsEyiG",
-   
   },
 ];
 

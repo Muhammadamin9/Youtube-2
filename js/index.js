@@ -11,6 +11,7 @@ youtubeLogo.addEventListener('click',function(){
 location.reload();
 });
 
+
 listIcon.addEventListener('click', function () {
   heroFilter.style.display = heroFilter.style.display === 'none' ? 'inline-block' : 'none';
 });
@@ -62,19 +63,19 @@ searchInput.addEventListener('blur', () => {
 
 if(searchHistory.length>=10){
   searchHistory.shift();
-
 }
 
 displayHistory();
 let usersVideo = JSON.parse(localStorage.getItem('newVideo'));
 console.log(usersVideo);
 function renderVideos(videosArray) {
-  videosUl.innerHTML = ``;
+  videosUl.textContent = ``;
   videosArray.forEach(el => {
     videosUl.insertAdjacentHTML(
       "beforeend",
       `
       <li class="main-list__item">
+       <a href="detail.html?id=${el.id}">
         <div class="img-section">
           <div class="img">
             <img class="item-img" src="${el.thumbnail}" alt="">
@@ -98,11 +99,15 @@ function renderVideos(videosArray) {
             </div>
           </div>
         </div>
+       </a>
+       
       </li>
       `
     );
   });
 }
+
+
 
 renderVideos(videoData);  
 const micButton = document.querySelector('.header__mic-button');
@@ -136,10 +141,6 @@ if (SpeechRecognition) {
     console.error( e.error);
   });
 } 
-videoItem = document.querySelector('.main-list__item');
-videoItem.addEventListener('click',function(){
-
-});
 
 let videoItem = document.querySelector('.main-list__item');
 videoItem.addEventListener('click',function(){
@@ -154,3 +155,22 @@ isVideoInWatchLater=true;
 });
 
 heroFilter.style.display = heroFilter.style.display === 'none' ? 'inline-block' : 'none';
+
+console.log(searchHistory);
+let videos = document.querySelector('.videos');
+let categorysUl = document.querySelector('.categorys-ul')
+
+let notificationsBtn = document.querySelector('.header__notifications-button');
+let notifications = document.querySelector('.notifications');
+notificationsBtn.addEventListener('click',function(){
+  notifications.style.display = notifications.style.display === 'none' ? 'flex' : 'none';
+});
+let closeNotsBtn = document.querySelector('.close-btn');
+closeNotsBtn.addEventListener('click', () => {
+    notifications.style.display = 'none';
+});
+notifications.addEventListener('blur',()=>{
+  setTimeout(() => {
+  notifications.style.display = 'none';
+  }, 200);
+})
