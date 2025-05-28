@@ -247,7 +247,3 @@ let videoData = [
     src: "https://www.youtube.com/embed/pmRCR6PbXnk",
   },
 ];
-<<<<<<< HEAD
-6
-=======
->>>>>>> 3e4ff19c17bd277ef1c76876c030b58fac792ddf

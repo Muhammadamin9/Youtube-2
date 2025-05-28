@@ -2,3 +2,46 @@
   display: flex;
   gap: 30px;
 }
+.chanel-name{
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+.chanel-subscribe__btn{
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 5px;
+  background-color: red;
+  color: white;
+  font-size: medium;
+  border:1px solid red ;
+}
+.chanel-subscribers{
+  font-size: 13px;
+  font-weight: 400px;
+  margin-left: 5px;
+}
+.chanel-like{
+  border-radius: 15px  0px 0px 15px;
+  width: 70px;
+  margin-left: 200px;
+  border: 1px solid white;
+  background-color: #222;
+  color: white;
+}
+.chanel-dislike{
+  border-radius:  0px 15px 15px  0px ;
+  width: 40px;
+   border: 1px solid white;
+   background-color: #222;
+   color: white;
+}
+.chanel-share{
+  width: 100px;
+  background-color: #222;
+  color: white;
+  font-weight: 500;
+  border-radius: 15px;
+  border: 1px solid white;
+  margin-left: 10px;
+}
