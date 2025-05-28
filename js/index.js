@@ -78,6 +78,7 @@ function renderVideos(videosArray) {
         <div class="img-section">
           <div class="img">
             <img class="item-img" src="${el.thumbnail}" alt="">
+            //lol
           </div>
           <div class="video-size">${el.duration}</div>
         </div>
