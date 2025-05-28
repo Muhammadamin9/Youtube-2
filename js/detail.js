@@ -2,12 +2,9 @@ let watchVideoSec = document.querySelector(".watch-video");
 
 let recomendationsUl = document.querySelector('.recomendations-ul');
 
-
 let params = new URLSearchParams(window.location.search);
 let id = params.get("id");
-console.log(id);
 let findVideo = videoData.find(el => el.id == id);
-console.log(findVideo);
 watchVideoSec.insertAdjacentHTML('beforeend',`
 <iframe width="850px" height="550px" src="${findVideo.src}" title="${findVideo.title}" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 `);

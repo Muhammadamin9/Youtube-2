@@ -175,4 +175,3 @@ notifications.addEventListener('blur',()=>{
   notifications.style.display = 'none';
   }, 200);
 });
-console.log(searchHistory);
