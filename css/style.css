@@ -216,7 +216,7 @@ header {
   height: 600px;
   right: 200px;
   z-index: 10000;
-  background-color: #212121;
+  background-color: #282828;
 }
 
 .notifications-big__p {
@@ -226,6 +226,7 @@ header {
 
 .notifications {
   display: none;
+  width: 500px;
 }
 
 hr {
@@ -914,8 +915,5 @@ header {
 
 .watch-video__wrapper {
   display: flex;
-}
-
-.watch-video {
-  width: 100%;
+  gap: 30px;
 }/*# sourceMappingURL=style.css.map */

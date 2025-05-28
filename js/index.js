@@ -156,7 +156,6 @@ isVideoInWatchLater=true;
 
 heroFilter.style.display = heroFilter.style.display === 'none' ? 'inline-block' : 'none';
 
-console.log(searchHistory);
 let videos = document.querySelector('.videos');
 let categorysUl = document.querySelector('.categorys-ul')
 
@@ -173,4 +172,5 @@ notifications.addEventListener('blur',()=>{
   setTimeout(() => {
   notifications.style.display = 'none';
   }, 200);
-})
+});
+console.log(searchHistory);
