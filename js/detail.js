@@ -2,17 +2,13 @@ let watchVideoSec = document.querySelector(".watch-video");
 
 let recomendationsUl = document.querySelector('.recomendations-ul');
 
-
 let params = new URLSearchParams(window.location.search);
 let id = params.get("id");
-console.log(id);
 let findVideo = videoData.find(el => el.id == id);
-console.log(findVideo);
 watchVideoSec.insertAdjacentHTML('beforeend',`
-<iframe width="950px" height="650px" src="${findVideo.src}" title="${findVideo.title}" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="850px" height="550px" src="${findVideo.src}" title="${findVideo.title}" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 `);
 videoData.forEach(el =>{
-    if(el.category == findVideo.category && el !== findVideo){
         recomendationsUl.insertAdjacentHTML('beforeend',`<li class="main-list__item">
        <a href="detail.html?id=${el.id}">
         <div class="img-section">
@@ -42,5 +38,4 @@ videoData.forEach(el =>{
        
       </li>`
       );
-    }
 });
