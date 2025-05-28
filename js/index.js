@@ -107,7 +107,9 @@ function renderVideos(videosArray) {
   });
 }
 
-
+if (searchHistory.length >= 10) {
+  searchHistory.shift();
+}
 
 renderVideos(videoData);  
 const micButton = document.querySelector('.header__mic-button');
