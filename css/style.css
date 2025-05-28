@@ -299,7 +299,7 @@ hr {
   color: white;
   background-color: #212121;
   font-size: 14px;
-  padding: 2px 2px 2px 2px;
+  padding: 2px;
 }
 
 .chanel-name {
@@ -311,6 +311,9 @@ hr {
 
 .video-info {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
 }
 
 .video-viwes {
