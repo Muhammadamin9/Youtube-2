@@ -13,8 +13,42 @@
 
   </head>
   <body>
-    
-    
+       
+    <header>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__left-side">
+            <button class="header-list__icon"></button>
+            <button class="header__icon"></button>
+          </div>
+          <div class="header__search">
+            <form action="#" class="search-form">
+              <input style="color: #fff;" placeholder="Search" type="text" class="header__input" />
+              <button class="header__search-button" type="submit"></button>
+            </form>
+            <ul class="history-ul"></ul>
+
+            <button class="header__mic-button"></button>
+          </div>
+          <div class="header__right-side">
+            <a
+              href="./createVideo.html"
+              class="header__button header__create-button"
+            ></a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.google.android.youtube&pli=1"
+              target="_blank"
+              class="header__button header__app-button"
+            ></a>
+            <a
+              href="./notifications.html"
+              class="header__button header__notifications-button"
+            ></a>
+            <button class="header__button header__profile-button"></button>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -45,8 +79,7 @@
                   </li>
                    </a>
                     <br />
-                    <a href="explore.html" class="filter__link">
-                      <li
+                    <a href="./explore.html">        <li
                       class="filter__li"
                       style="color: white; cursor: pointer"
                     >
@@ -66,8 +99,9 @@
                       </svg>
                       Explore
                     </li>
-                    </a>
-                    
+                  </a>
+           
+            
                     <br />
                     <li
                       class="filter__li"
@@ -113,8 +147,7 @@
                     </li>
                   </a>
                     <br />
-                   <a href="histroy.html" class="filter__link">
-                     <li
+                    <li
                       class="filter__li"
                       style="color: white; cursor: pointer"
                     >
@@ -137,9 +170,7 @@
                       </svg>
                       History
                     </li>
-                   </a>
                     <br />
-                    <a href="./yourvideos.html">
                     <li
                       class="filter__li"
                       style="color: white; cursor: pointer"
@@ -160,7 +191,6 @@
                       </svg>
                       Your Videos
                     </li>
-                  </a>
                     <br />
                     <li
                       class="filter__li"
@@ -358,17 +388,13 @@
 
                 <!-- Fozil -->
               </div>
-
+              <div class="hero__videos">
+                <!-- nemat -->
+                <!-- nemat -->
+              </div>
             </div>
             <!--Nemat-->
-            <div class="videos">
-              <ul class="categorys-ul">
-                <li class="categorys-li categorys-active__li">
-                  
-                </li>
-                <!-- <li class="categorys-li"><button onclick="categorySort()" class="categorys-button"></button></li> -->
-              </ul> 
-              <ul class="main-list__videos">
+            <ul class="main-list__videos">
               <!-- <li class="main-list__item">
 <div class="img-section">
   <div class="img">
@@ -392,13 +418,11 @@ adipiscing elit.</p>
 </div>
 </li> -->
             </ul>
-            </div>
             <!--Nemat-->
           </div>
         </div>
       </section>
     </main>
-    <h1></h1>
     <script src="./js/youtube.js"></script>
     <script src="./js/index.js"></script>
 
@@ -407,6 +431,5 @@ adipiscing elit.</p>
 
     <script src="./js/explore.js"></script>
     <script src="./js/liked.js"></script>
-    <script src="./js/history.js"></script>
   </body>
 </html>
