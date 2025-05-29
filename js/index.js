@@ -67,7 +67,6 @@ if(searchHistory.length>=10){
 
 displayHistory();
 let usersVideo = JSON.parse(localStorage.getItem('newVideo'));
-console.log(usersVideo);
 function renderVideos(videosArray) {
   videosUl.textContent = ``;
   videosArray.forEach(el => {

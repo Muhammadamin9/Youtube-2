@@ -15,6 +15,7 @@ let videoData = [
     category: "Music",
     src: "https://www.youtube.com/embed/8RBm0qKOmHY",
     like: 102,
+    numViews:1000000
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ let videoData = [
     category: "Shaxsiy rivojlanish",
     src: "https://www.youtube.com/embed/VaKz4Jbe6C0",
     like: 240,
+    numViews:52000
   },
   {
     id: 3,
@@ -49,7 +51,8 @@ let videoData = [
     thumbnail: "thumbnails/ai-5x.avif",
     category: "Texnologiya",
     src: "https://www.youtube.com/embed/Oxe8LZYK31w",
-    like: 780,
+    numViews:71000,
+    like: 780
   },
   {
     id: 4,
@@ -67,6 +70,8 @@ let videoData = [
     category: "Madaniyat",
     src: "https://www.youtube.com/embed/bdEYgtmzQdk",
     like: 304,
+    numViews:381000
+
   },
   {
     id: 5,
@@ -84,6 +89,8 @@ let videoData = [
     category: "O'yinlar",
     src: "https://www.youtube.com/embed/CgZ5ukSgubc",
     like: 932,
+    numViews:49000
+
   },
   {
     id: 6,
@@ -101,6 +108,7 @@ let videoData = [
     category: "Shaxsiy rivojlanish",
     src: "https://www.youtube.com/embed/cA1Q5bFY5Z8",
     like: 65,
+    numViews:338000
   },
   {
     id: 7,
@@ -119,6 +127,7 @@ let videoData = [
     category: "Motivatsiya",
     src: "https://www.youtube.com/embed/uul53emqf10",
     like: 130,
+    numViews:170000
   },
   {
     id: 8,
@@ -136,6 +145,7 @@ let videoData = [
     category: "Sport",
     src: "https://www.youtube.com/embed/XXYbVpkI-UY",
     like: 560,
+    numViews:10000000
   },
   {
     id: 9,
@@ -148,7 +158,9 @@ let videoData = [
     duration: "1:37:47",
     thumbnail: "thumbnails/oddbods.avif",
     category: "Kids",
-    src: "https://www.youtube.com/embed/Kdnri6JLJqY", // Video ID yo‘q, shuning uchun linkni to‘liq ko‘rsata olmayman.
+    src: "https://www.youtube.com/embed/Kdnri6JLJqY", 
+    numViews:2100000
+
   },
 
   {
@@ -164,6 +176,8 @@ let videoData = [
     thumbnail: "thumbnails/sm.avif",
     category: "Sport",
     src: "https://www.youtube.com/embed/xtZOYN61Y68",
+    numViews:405000
+
   },
   {
     id: 11,
@@ -177,20 +191,24 @@ let videoData = [
     thumbnail: "thumbnails/el.avif",
     category: "Sport",
     src: "https://www.youtube.com/embed/ZPPqsZgoYHo",
+    numViews:1056000
+
   },
   {
     id: 12,
     title:
-      "Box Full of Model Cars -Mazda Mx5, Koenigesgg Jesko, Lamborghini Scv12, Byd Yang Wang U8, Toyota Car",
+    "Box Full of Model Cars -Mazda Mx5, Koenigesgg Jesko, Lamborghini Scv12, Byd Yang Wang U8, Toyota Car",
     channel: "  Desiliun Diecast",
     channelPhoto:
       "https://yt3.ggpht.com/EhzbF7BD4m5cezu9nb8CQuK6GB1nagQ3JfU7Vuked7DVa_fz4C4cuJNfuXCM0mTvYyhWBp7l9w=s88-c-k-c0x00ffffff-no-rj",
-    views: "6",
+    views: "6M",
     uploaded: " 86 minutes ago ",
     duration: "1:24:47",
     thumbnail: "thumbnails/mm.avif",
     category: "Sport",
     src: "https://www.youtube.com/embed/tvX1BgQh_sk",
+    numViews:60000000
+
   },
   {
     id: 13,
@@ -199,12 +217,14 @@ let videoData = [
     channel: "  GAMEFANS",
     channelPhoto:
       "https://yt3.ggpht.com/_mvO5sG4QTSek0TI1hBIygajwyiYyfQK_e381C7trqeeMxFsjDZT2u9Nd2xHaYXCcn0f5Sjq5g=s88-c-k-c0x00ffffff-no-rj",
-    views: "6",
+    views: "6k",
     uploaded: "4 months ago",
     duration: "10:49",
     thumbnail: "thumbnails/olo.avif",
     category: "O'yinlar",
     src: "https://www.youtube.com/embed/66AMwGmBdn8",
+    numViews:6000
+
   },
   {
     id: 14,
@@ -212,12 +232,14 @@ let videoData = [
     channel: "  Kadir Tolipov",
     channelPhoto:
       "https://yt3.ggpht.com/ExnW-WpoEa9dVTo8n0fQRE2jjwjraFEdcGG9F1D6Mm3kiC1oYVOOZ0Jyes7Chj7RC73Vmu8zgQ=s88-c-k-c0x00ffffff-no-rj",
-    views: "1M6",
+    views: "1M",
     uploaded: "2 weeks  ago",
     duration: "10:20",
     thumbnail: "thumbnails/ky.avif",
     category: "Comedy",
     src: "https://www.youtube.com/embed/nENUBulDXKA",
+    numViews:10000000
+
   },
   {
     id: 15,
@@ -231,6 +253,8 @@ let videoData = [
     thumbnail: "thumbnails/oop.avif",
     category: "Comedy",
     src: "https://www.youtube.com/embed/7C4OCxvroU8",
+    numViews:933000
+
   },
 
   {
@@ -245,5 +269,6 @@ let videoData = [
     thumbnail: "thumbnails/pp.avif",
     category: "Comedy",
     src: "https://www.youtube.com/embed/pmRCR6PbXnk",
+    numViews:698000
   },
 ];
