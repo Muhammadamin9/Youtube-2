@@ -13,13 +13,14 @@
 
   </head>
   <body>
-       
     <header>
       <div class="container">
         <div class="header__wrapper">
           <div class="header__left-side">
             <button class="header-list__icon"></button>
+            <a href="./index.html">
             <button class="header__icon"></button>
+            </a>
           </div>
           <div class="header__search">
             <form action="#" class="search-form">
@@ -40,15 +41,23 @@
               target="_blank"
               class="header__button header__app-button"
             ></a>
-            <a
-              href="./notifications.html"
+            <button
               class="header__button header__notifications-button"
-            ></a>
+            ></button>
+            <div class="notifications">
+              <button class="close-btn">X</button>
+              <img src="./img/Notifications.svg" alt="">
+              <p class="notifications-big__p">No notifications yet</p>
+              <hr>
+              <p class="notifications-small__p">
+                This section will contain notifications about new videos on the channels you subscribe to.</p>
+            </div>
             <button class="header__button header__profile-button"></button>
           </div>
         </div>
       </div>
-    </header>
+    </header>   
+    
     <main>
       <section class="hero">
         <div class="container">
@@ -79,7 +88,8 @@
                   </li>
                    </a>
                     <br />
-                    <a href="./explore.html">        <li
+                    <a href="histroy.html" class="filter__link">
+                      <li
                       class="filter__li"
                       style="color: white; cursor: pointer"
                     >
@@ -99,9 +109,8 @@
                       </svg>
                       Explore
                     </li>
-                  </a>
-           
-            
+                    </a>
+                    
                     <br />
                     <li
                       class="filter__li"
@@ -390,13 +399,17 @@
 
                 <!-- Fozil -->
               </div>
-              <div class="hero__videos">
-                <!-- nemat -->
-                <!-- nemat -->
-              </div>
+
             </div>
             <!--Nemat-->
-            <ul class="main-list__videos">
+            <div class="videos">
+              <ul class="categorys-ul">
+                <li class="categorys-li categorys-active__li">
+                  
+                </li>
+                <!-- <li class="categorys-li"><button onclick="categorySort()" class="categorys-button"></button></li> -->
+              </ul> 
+              <ul class="main-list__videos">
               <!-- <li class="main-list__item">
 <div class="img-section">
   <div class="img">
@@ -420,6 +433,7 @@ adipiscing elit.</p>
 </div>
 </li> -->
             </ul>
+            </div>
             <!--Nemat-->
           </div>
         </div>

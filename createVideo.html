@@ -127,8 +127,15 @@
   <option value="Motivatsiya">Motivatsiya</option>
   <option value="Sport">Sport</option>
 </select>
-
     <input class="create-video__input" type="text" placeholder="Channel Name" id="channel-name">
+    <label for="channel-photo">
+      <input type="file" placeholder="Channel photo" id="channel-photo" hidden>
+      <span class="create-video__input" style="display: inline-block;padding-top: 12.5px;">Channel photo:</span>
+    </label>
+    <label for="video-poster">
+      <input type="file" placeholder="Channel photo" id="video-poster" hidden>
+      <span class="create-video__input" style="display: inline-block;padding-top: 12.5px;">Video poster:</span>
+    </label>
     <button class="create-video__button" id="upload-btn">Upload</button>
   </form>
 </div>
