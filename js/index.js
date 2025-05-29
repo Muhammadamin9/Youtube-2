@@ -107,7 +107,9 @@ function renderVideos(videosArray) {
   });
 }
 
-
+if (searchHistory.length >= 10) {
+  searchHistory.shift();
+}
 
 renderVideos(videoData);  
 const micButton = document.querySelector('.header__mic-button');
@@ -156,7 +158,6 @@ isVideoInWatchLater=true;
 
 heroFilter.style.display = heroFilter.style.display === 'none' ? 'inline-block' : 'none';
 
-console.log(searchHistory);
 let videos = document.querySelector('.videos');
 let categorysUl = document.querySelector('.categorys-ul')
 
@@ -173,4 +174,4 @@ notifications.addEventListener('blur',()=>{
   setTimeout(() => {
   notifications.style.display = 'none';
   }, 200);
-})
+});

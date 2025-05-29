@@ -150,7 +150,7 @@ position: relative;
         height: 600px;
         right: 200px;
         z-index: 10000;
-        background-color: $dark-theme-color;
+        background-color: #282828;
 }
 .notifications-big__p {
     color: #606060;
@@ -158,6 +158,7 @@ position: relative;
 }
 .notifications{
     display: none;
+    width: 500px;
 }
 hr{
     color: #606060;

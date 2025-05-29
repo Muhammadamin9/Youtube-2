@@ -216,7 +216,7 @@ header {
   height: 600px;
   right: 200px;
   z-index: 10000;
-  background-color: #212121;
+  background-color: #282828;
 }
 
 .notifications-big__p {
@@ -226,6 +226,7 @@ header {
 
 .notifications {
   display: none;
+  width: 500px;
 }
 
 hr {
@@ -298,7 +299,7 @@ hr {
   color: white;
   background-color: #212121;
   font-size: 14px;
-  padding: 2px 2px 2px 2px;
+  padding: 2px;
 }
 
 .chanel-name {
@@ -310,6 +311,9 @@ hr {
 
 .video-info {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
 }
 
 .video-viwes {
@@ -355,6 +359,10 @@ form {
   background-color: white;
   color: black;
   border: 1px solid white;
+}
+
+.watch-video {
+  height: 600px;
 }
 
 body {
@@ -914,8 +922,54 @@ header {
 
 .watch-video__wrapper {
   display: flex;
+  gap: 30px;
 }
 
-.watch-video {
-  width: 100%;
+.chanel-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.chanel-subscribe__btn {
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 5px;
+  background-color: red;
+  color: white;
+  font-size: medium;
+  border: 1px solid red;
+}
+
+.chanel-subscribers {
+  font-size: 13px;
+  font-weight: 400px;
+  margin-left: 5px;
+}
+
+.chanel-like {
+  border-radius: 15px 0px 0px 15px;
+  width: 70px;
+  margin-left: 200px;
+  border: 1px solid white;
+  background-color: #222;
+  color: white;
+}
+
+.chanel-dislike {
+  border-radius: 0px 15px 15px 0px;
+  width: 40px;
+  border: 1px solid white;
+  background-color: #222;
+  color: white;
+}
+
+.chanel-share {
+  width: 100px;
+  background-color: #222;
+  color: white;
+  font-weight: 500;
+  border-radius: 15px;
+  border: 1px solid white;
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
