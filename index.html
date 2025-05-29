@@ -13,7 +13,59 @@
 
   </head>
   <body>
-    
+    <header>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__left-side">
+            <button class="header-list__icon"></button>
+            <a href="./index.html">
+            <button class="header__icon"></button>
+            </a>
+          </div>
+          <div class="header__search">
+            <form action="#" class="search-form">
+              <input style="color: #fff;" placeholder="Search" type="text" class="header__input" />
+              <button class="header__search-button" type="submit"></button>
+            </form>
+            <ul class="history-ul"></ul>
+
+            <button class="header__mic-button"></button>
+          </div>
+          <div class="header__right-side">
+            <a
+              href="./createVideo.html"
+              class="header__button header__create-button"
+            ></a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.google.android.youtube&pli=1"
+              target="_blank"
+              class="header__button header__app-button"
+            ></a>
+            <button
+              class="header__button header__notifications-button"
+            ></button>
+            <div class="notifications">
+              <button class="close-btn">X</button>
+              <img src="./img/Notifications.svg" alt="">
+              <p class="notifications-big__p">No notifications yet</p>
+              <hr>
+              <p class="notifications-small__p">
+                This section will contain notifications about new videos on the channels you subscribe to.</p>
+            </div>
+            <button class="header__button header__profile-button"></button>
+          </div>
+          <ul class="navigation-for__media" style="display: flex; gap: 15px;">
+           <a href="./explore.html" style="color:white">
+            <li class="navigation-item" style="border: 1px solid gray;padding: 5px;border-radius: 10px;">Explore</li>
+           </a>
+           <a href="./histroy.html" style="color:white">
+             <li class="navigation-item" style="border: 1px solid gray;padding: 5px;border-radius: 10px;">History</li>
+           </a>
+          </ul>
+        </div>
+      </div>
+
+    </header>   
     
     <main>
       <section class="hero">
@@ -66,8 +118,9 @@
                       </svg>
                       Explore
                     </li>
-                    </a>
-                    
+                  </a>
+           
+            
                     <br />
                     <li
                       class="filter__li"

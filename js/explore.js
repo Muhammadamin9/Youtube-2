@@ -1,12 +1,15 @@
 
-
     let trendVideos = document.querySelector('.trend-videos');
 
     function displayTopTrendingVideos() {
-        const topVideos = videoData.slice().sort((a, b) => {a.views - b.views}).slice(0, 8);
+
+        const topVideos = videoData
+            .slice()
+            .sort((a, b) => {const viewsA = parseViews(a.views);const viewsB = parseViews(b.views);
+                return viewsB - viewsA;}).slice(0, 8);
 
         trendVideos.innerHTML = '';
-        
+
         if (topVideos.length === 0) {
             trendVideos.innerHTML = '<li class="trend-videos__empty">No trending videos available</li>';
             return;
@@ -40,7 +43,21 @@
         });
     }
 
+    function parseViews(views) {
+        if (typeof views === 'number') return views;
+        if (typeof views !== 'string') return 0;
+
+        const cleaned = views.replace(/,/g, '').toLowerCase();
+        if (cleaned.endsWith('k')) {
+            return parseFloat(cleaned.replace('k', '')) * 1000;
+        } else if (cleaned.endsWith('m')) {
+            return parseFloat(cleaned.replace('m', '')) * 1000000;
+        } else if (cleaned.endsWith('b')) {
+            return parseFloat(cleaned.replace('b', '')) * 1000000000;
+        }
+        return parseInt(cleaned) || 0;
+    }
+
     if (trendVideos) {
         displayTopTrendingVideos();
     }
-

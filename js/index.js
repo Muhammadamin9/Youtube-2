@@ -14,6 +14,7 @@ location.reload();
 
 listIcon.addEventListener('click', function () {
   heroFilter.style.display = heroFilter.style.display === 'none' ? 'inline-block' : 'none';
+  videosUl.setAttribute('style','grid-template-columns:1fr 1fr 1fr;')
 });
 let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
 function displayHistory() {
